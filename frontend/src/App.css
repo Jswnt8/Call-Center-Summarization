@@ -1,0 +1,211 @@
+.app-container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.hero {
+  text-align: left;
+  padding: 2rem 0;
+}
+
+.hero h1 {
+  font-size: 2.75rem;
+  font-weight: 800;
+  margin-bottom: 0.25rem;
+}
+
+.hero p {
+  font-size: 1.125rem;
+  color: #6b7280;
+}
+
+.card,
+.summary-card,
+.technical-terms {
+  background: #ffffff;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 2rem;
+  margin-top: 1.5rem;
+  transition: 0.3s ease;
+}
+
+/* Center the summarize button */
+.summarize-btn {
+  display: block;
+  margin: 1rem auto; /* Center horizontally */
+}
+
+.upload-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.upload-card:hover {
+  transform: translateY(-2px);
+}
+
+.upload-btn {
+  background: linear-gradient(to right, #6366f1, #7c3aed);
+  padding: 0.75rem 1.25rem;
+  border-radius: 10px;
+  color: white;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.upload-btn:hover {
+  background: #4f46e5;
+  transform: scale(1.03);
+}
+
+@media (max-width: 768px) {
+  .app-container {
+    padding: 1rem;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .upload-card,
+  .summary-card,
+  .technical-terms {
+    padding: 1.25rem;
+  }
+
+  button {
+    width: 100%;
+  }
+}
+
+.gradient-text {
+  background: linear-gradient(to right, #6366f1, #ec4899);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.section-wrapper {
+  background: white;
+  border-radius: 16px;
+  padding: 2rem 2rem;
+  margin: 2rem auto;
+  max-width: 800px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+}
+
+.section-wrapper ul li {
+  line-height: 1.6;
+  color: #374151;
+}
+
+.section-wrapper:hover {
+  transform: translateY(-1px);
+}
+
+.centered-text {
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .section-wrapper {
+    padding: 1.25rem;
+    margin: 1rem;
+  }
+}
+
+.hero {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: linear-gradient(to right, #f8fafc, #eef2f7);
+  border-radius: 16px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  color: #6b7280;
+}
+
+.formatted-summary div {
+  max-width: 100%;
+  word-wrap: break-word;
+}
+
+/* .formatted-summary div:nth-child(n) {
+  margin-left: 0;
+} */
+
+/* .formatted-summary div:has(strong) {
+  margin-top: 1.2rem;
+} */
+
+/* Indentation for Level 1 (•) */
+/* .formatted-summary div:has(:not(strong)) {
+  margin-left: 1rem;
+} */
+
+/* Indentation for Level 2 (◦) */
+/* .formatted-summary div:has(:not(strong)):has(> [style*="margin-left: 40px"]) {
+  margin-left: 2rem;
+} */
+
+
+.formatted-summary strong {
+  display: block;
+  margin-top: 1.25rem;
+  font-weight: 600;
+}
+
+.formatted-bullet {
+  line-height: 1.7;
+  word-wrap: break-word;
+  margin-bottom: 0.25rem;
+  padding-left: 24px;
+}
+
+/* Indent level-1 bullets more. */
+.bullet-level-1 {
+  padding-left: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Indent level-2 bullets even further. */
+.bullet-level-2 {
+  padding-left: 2.5rem;
+  margin-bottom: 0.25rem;
+  color: #444;
+  font-size: 0.95rem;
+}
+
+.summary-header {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-top: 1.25rem;
+  /* text-align: center; */
+}
+
+.term-definition {
+  margin-left: 1rem;
+  margin-bottom: 0.25rem;
+  line-height: 1.6;
+}
+
+.flex {
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
+}
